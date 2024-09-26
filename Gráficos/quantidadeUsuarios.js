@@ -21,7 +21,7 @@ async function quantidadeUsuarios() {
         plot_bgcolor: getCSS('--cor-de-fundo'),
         paper_bgcolor: getCSS('--cor-de-fundo'),
         title: {
-            text: 'População por  cor ou raça',
+            text: 'População por cor ou raça',
             font: {
                 color: getCSS('--cor-principal'),
                 family: getCSS('--fonte'),
