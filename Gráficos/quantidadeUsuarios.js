@@ -4,8 +4,8 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = ["Branca","Amarela"]
-    const quantidadeUsuarios = ["88252121","850130"]
+    const nomeDasRedes = ["Branca","Amarela", "Preta", "Parda", "Indígena"]
+    const quantidadeUsuarios = ["88252121","850130", "20656458", "92083286", "1227642"]
     const data = [
         {
             x: nomeDasRedes,
