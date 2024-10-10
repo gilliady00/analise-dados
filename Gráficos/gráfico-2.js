@@ -4,8 +4,8 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = ["Branca","Amarela", "Preta", "Parda", "Indígena"]
-    const quantidadeUsuarios = ["88252121","850130", "20656458", "92083286", "1227642"]
+    const nomeDasRedes = ["Neiman Marcus", "1949 E90 AJS Porcupine", "Ecosse ES1", "BMS Nehmesis", "Medusa de Tarhan Telli", ]
+    const quantidadeUsuarios = ["11000000", "7000000", "3600000", "3000000", "1000000"]
     const data = [
         {
             x: nomeDasRedes,
@@ -40,7 +40,7 @@ async function quantidadeUsuarios() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Milhões de pessoas',
+                text: 'Preço (US$)',
                 font: {
                     color: getCSS('--cor-secundaria')
                 }
