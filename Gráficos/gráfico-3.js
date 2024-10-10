@@ -4,8 +4,8 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = ["Branca","Amarela", "Preta", "Parda", "Indígena"]
-    const quantidadeUsuarios = ["88252121","850130", "20656458", "92083286", "1227642"]
+    const nomeDasRedes = ["Estação Especial Intercional","Hang Fung", "Moon River Art Park", "Dagoberto", "Sun-Mar"]
+    const quantidadeUsuarios = ["19000000","5000000", "750000", "14000", "1500"]
     const data = [
         {
             x: nomeDasRedes,
@@ -21,7 +21,7 @@ async function quantidadeUsuarios() {
         plot_bgcolor: getCSS('--cor-de-fundo'),
         paper_bgcolor: getCSS('--cor-de-fundo'),
         title: {
-            text: 'População por cor ou raça',
+            text: 'Vasos mais caros do mundo',
             font: {
                 color: getCSS('--cor-principal'),
                 family: getCSS('--fonte'),
@@ -31,7 +31,7 @@ async function quantidadeUsuarios() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Cor ou raça',
+                text: 'Vasos',
                 font: {
                     color: getCSS('--cor-secundaria')
                 }
@@ -40,7 +40,7 @@ async function quantidadeUsuarios() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Milhões de pessoas',
+                text: 'Preço (US$)',
                 font: {
                     color: getCSS('--cor-secundaria')
                 }
